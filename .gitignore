@@ -2,8 +2,6 @@
 __pycache__/
 *.py[cod]
 
-# C extensions
-*.so
 
 # Distribution / packaging
 .Python
@@ -20,6 +18,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -45,6 +44,11 @@ coverage.xml
 *.mo
 *.pot
 
+# Django stuff:
+*.log
+staticroot
+db.sqlite3
+
 
 # Sphinx documentation
 docs/_build/
@@ -53,19 +57,9 @@ docs/_build/
 target/
 
 # Project Specific
-*/.idea/*
-*.iml
-local_settings.ini
+*.idea
 local_test
-local_test/*
-*.log
-*.pkl
-*.sqlite3
-envs/.env-local
-django_local_logs
-_get_pwd.py
-evidence_collection
-deployment_config_symlink
+*.iml
 
 # Apple garbage
 *.DS_Store
